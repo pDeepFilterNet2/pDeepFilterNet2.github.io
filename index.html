@@ -1,3 +1,4 @@
+<body>
 <head>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -10,8 +11,8 @@
 <p><i>
     Thomas Serre*† , 
     Mathieu Fontaine* , 
-    Éric Benhaim † , 
-    Geoffroy Dutour † , 
+    Éric Benhaim† , 
+    Geoffroy Dutour† , 
     Slim Essid*
 </i> </p>
 
@@ -43,10 +44,48 @@ personalization method greatly improves the performances
 of DeepFilterNet2 while preserving minimal computational
 overhead.
 </p></i>
-
+<hr>
+<hr>
 <h3>
     Samples
 </h3>
-<p>
-    Word about samples, test set etc...
+<p align="justify">
+    The samples bellow are extracted from a test set generated with VCTK corpus for the speech and DNS5 Challenge for the noise. 
+    The typology of excerpt is the following: pn corresponds to target voice + noise, ps corresponds to target voice + interfereing voice 
+    and psn corresponds to target voice + interfering voice + noise. The SNR corresponds to the Signal-to-Noise ratio, and the SIR 
+    to the Signal-to-Interference Ratio. 
 </p>
+<hr>
+<table>
+    <tr>
+        <th>Sample information</th>
+        <th>Clean</th>
+        <th>Noisy</th>
+        <th>DeepFilterNet2</th>
+        <th>pDeepFilterNet2</th>
+    </tr>
+    <tr>
+        <th>
+            Type: ps
+            SIR: 
+            SNR:
+        </th>
+        <th><audio controls autoplay>
+            <source src="audio/noisy_0.wav" type="audio/wav">
+        </audio>
+        </th>
+        <th><audio controls autoplay>
+            <source src="audio/noisy_0.wav" type="audio/wav">
+        </audio>
+        </th>
+        <th><audio controls autoplay>
+            <source src="audio/noisy_0.wav" type="audio/wav">
+        </audio>
+        </th>
+        <th><audio controls autoplay>
+            <source src="audio/noisy_0.wav" type="audio/wav">
+        </audio>
+        </th>
+    </tr>
+</table>
+</body>

@@ -3,10 +3,16 @@
 } */
 body {
     color: #ffffff;
-    background: #af4444;
+    background: #01273d;
     font: 100% system-ui;
   }
   a {
     color: #0033cc;
   }
+
+table, tr, td, th{
+    padding: 10px;
+    margin: auto;
+    border: none;
+    }
   
