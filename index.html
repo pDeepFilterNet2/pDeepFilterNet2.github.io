@@ -28,20 +28,16 @@
 <h2>Abstract</h2>
 <p align="justify"><i>
     Isolating the desired speaker’s voice amidst multiple
-speakers in a noisy acoustic context is a challenging task. Per-
-sonalized speech enhancement (PSE) endeavors to achieve
+speakers in a noisy acoustic context is a challenging task. Personalized speech enhancement (PSE) endeavors to achieve
 this by leveraging prior knowledge of the speaker’s voice.
-Recent research efforts have yielded promising PSE mod-
-els, albeit often accompanied by computationally intensive
+Recent research efforts have yielded promising PSE models, albeit often accompanied by computationally intensive
 architectures, unsuitable for resource-constrained embedded
-devices. In this paper, we introduce a novel method to per-
-sonalize a lightweight dual-stage Speech Enhancement (SE)
+devices. In this paper, we introduce a novel method to personalize a lightweight dual-stage Speech Enhancement (SE)
 model and implement it within DeepFilterNet2, a SE model
 renowned for its state-of-the-art performance. We seek an
 optimal integration of speaker information within the model,
 exploring different positions for the integration of the speaker
-embeddings within the dual-stage enhancement architec-
-ture. We also investigate a tailored training strategy when
+embeddings within the dual-stage enhancement architecture. We also investigate a tailored training strategy when
 adapting DeepFilterNet2 to a PSE task. We show that our
 personalization method greatly improves the performances
 of DeepFilterNet2 while preserving minimal computational
@@ -62,7 +58,7 @@ overhead.
 <h3>Target voice + Interfering voice</h3>
 <table>
     <tr>
-        <th><strong>Model</strong></th>
+        <th>Model</th>
         <th>Sample 1</th>
         <th>Sample 2</th>
         <th>Sample 3</th>
@@ -79,73 +75,73 @@ overhead.
     </tr>
     <tr>
         <th>Clean</th>
-        <th><audio id="player" controls autoplay>
+        <th><audio style="width:240px;height:40px" id="player" controls autoplay>
             <source src="audio/noisy_0.wav" type="audio/wav">
         </audio></th>
-        <th><audio id="player" controls autoplay>
+        <th><audio style="width:240px;height:40px" id="player" controls autoplay>
             <source src="audio/noisy_0.wav" type="audio/wav">
         </audio></th>
-        <th><audio id="player" controls autoplay>
+        <th><audio style="width:240px;height:40px" id="player" controls autoplay>
             <source src="audio/noisy_0.wav" type="audio/wav">
         </audio></th>
-        <th><audio id="player" controls autoplay>
-            <source src="audio/noisy_0.wav" type="audio/wav">
+        <th><audio style="width:240px;height:40px" id="player" controls autoplay>
+            <source  src="audio/noisy_0.wav" type="audio/wav">
         </audio></th>
-        <th><audio id="player" controls autoplay>
+        <th><audio style="width:240px;height:40px" id="player" controls autoplay>
             <source src="audio/noisy_0.wav" type="audio/wav">
         </audio></th>
     </tr>
     <tr>
         <th>Noisy</th>
-        <th><audio id="player" controls autoplay>
+        <th><audio style="width:240px;height:40px" id="player" controls autoplay>
             <source src="audio/noisy_0.wav" type="audio/wav">
         </audio></th>
-        <th><audio id="player" controls autoplay>
+        <th><audio style="width:240px;height:40px" id="player" controls autoplay>
             <source src="audio/noisy_0.wav" type="audio/wav">
         </audio></th>
-        <th><audio id="player" controls autoplay>
+        <th><audio style="width:240px;height:40px" id="player" controls autoplay>
             <source src="audio/noisy_0.wav" type="audio/wav">
         </audio></th>
-        <th><audio id="player" controls autoplay>
-            <source src="audio/noisy_0.wav" type="audio/wav">
+        <th><audio style="width:240px;height:40px" id="player" controls autoplay>
+            <source  src="audio/noisy_0.wav" type="audio/wav">
         </audio></th>
-        <th><audio id="player" controls autoplay>
+        <th><audio style="width:240px;height:40px" id="player" controls autoplay>
             <source src="audio/noisy_0.wav" type="audio/wav">
         </audio></th>
     </tr>
     <tr>
         <th>DeepFilterNet2</th>
-        <th><audio id="player" controls autoplay>
+        <th><audio style="width:240px;height:40px" id="player" controls autoplay>
             <source src="audio/noisy_0.wav" type="audio/wav">
         </audio></th>
-        <th><audio id="player" controls autoplay>
+        <th><audio style="width:240px;height:40px" id="player" controls autoplay>
             <source src="audio/noisy_0.wav" type="audio/wav">
         </audio></th>
-        <th><audio id="player" controls autoplay>
+        <th><audio style="width:240px;height:40px" id="player" controls autoplay>
             <source src="audio/noisy_0.wav" type="audio/wav">
         </audio></th>
-        <th><audio id="player" controls autoplay>
-            <source src="audio/noisy_0.wav" type="audio/wav">
+        <th><audio style="width:240px;height:40px" id="player" controls autoplay>
+            <source  src="audio/noisy_0.wav" type="audio/wav">
         </audio></th>
-        <th><audio id="player" controls autoplay>
+        <th><audio style="width:240px;height:40px" id="player" controls autoplay>
             <source src="audio/noisy_0.wav" type="audio/wav">
         </audio></th>
     </tr>
     <tr>
         <th>pDeepFilterNet2</th>
-        <th><audio id="player" controls autoplay>
+        <th><audio style="width:240px;height:40px" id="player" controls autoplay>
             <source src="audio/noisy_0.wav" type="audio/wav">
         </audio></th>
-        <th><audio id="player" controls autoplay>
+        <th><audio style="width:240px;height:40px" id="player" controls autoplay>
             <source src="audio/noisy_0.wav" type="audio/wav">
         </audio></th>
-        <th><audio id="player" controls autoplay>
+        <th><audio style="width:240px;height:40px" id="player" controls autoplay>
             <source src="audio/noisy_0.wav" type="audio/wav">
         </audio></th>
-        <th><audio id="player" controls autoplay>
-            <source src="audio/noisy_0.wav" type="audio/wav">
+        <th><audio style="width:240px;height:40px" id="player" controls autoplay>
+            <source  src="audio/noisy_0.wav" type="audio/wav">
         </audio></th>
-        <th><audio id="player" controls autoplay>
+        <th><audio style="width:240px;height:40px" id="player" controls autoplay>
             <source src="audio/noisy_0.wav" type="audio/wav">
         </audio></th>
     </tr>
@@ -168,7 +164,6 @@ overhead.
         <th>-</th>
         <th>-</th>
         <th>-</th>
-        <th>-</th>
     </tr>
     <tr>
         <th>SNR (dB)</th>
@@ -177,77 +172,76 @@ overhead.
         <th>-</th>
         <th>-</th>
         <th>-</th>
-        <th>-</th>
     </tr>
     <tr>
         <th>Clean</th>
-        <th><audio id="player" controls autoplay>
+        <th><audio style="width:240px;height:40px" id="player" controls autoplay>
             <source src="audio/noisy_0.wav" type="audio/wav">
         </audio></th>
-        <th><audio id="player" controls autoplay>
+        <th><audio style="width:240px;height:40px" id="player" controls autoplay>
             <source src="audio/noisy_0.wav" type="audio/wav">
         </audio></th>
-        <th><audio id="player" controls autoplay>
+        <th><audio style="width:240px;height:40px" id="player" controls autoplay>
             <source src="audio/noisy_0.wav" type="audio/wav">
         </audio></th>
-        <th><audio id="player" controls autoplay>
-            <source src="audio/noisy_0.wav" type="audio/wav">
+        <th><audio style="width:240px;height:40px" id="player" controls autoplay>
+            <source  src="audio/noisy_0.wav" type="audio/wav">
         </audio></th>
-        <th><audio id="player" controls autoplay>
+        <th><audio style="width:240px;height:40px" id="player" controls autoplay>
             <source src="audio/noisy_0.wav" type="audio/wav">
         </audio></th>
     </tr>
     <tr>
         <th>Noisy</th>
-        <th><audio id="player" controls autoplay>
+        <th><audio style="width:240px;height:40px" id="player" controls autoplay>
             <source src="audio/noisy_0.wav" type="audio/wav">
         </audio></th>
-        <th><audio id="player" controls autoplay>
+        <th><audio style="width:240px;height:40px" id="player" controls autoplay>
             <source src="audio/noisy_0.wav" type="audio/wav">
         </audio></th>
-        <th><audio id="player" controls autoplay>
+        <th><audio style="width:240px;height:40px" id="player" controls autoplay>
             <source src="audio/noisy_0.wav" type="audio/wav">
         </audio></th>
-        <th><audio id="player" controls autoplay>
-            <source src="audio/noisy_0.wav" type="audio/wav">
+        <th><audio style="width:240px;height:40px" id="player" controls autoplay>
+            <source  src="audio/noisy_0.wav" type="audio/wav">
         </audio></th>
-        <th><audio id="player" controls autoplay>
+        <th><audio style="width:240px;height:40px" id="player" controls autoplay>
             <source src="audio/noisy_0.wav" type="audio/wav">
         </audio></th>
     </tr>
     <tr>
         <th>DeepFilterNet2</th>
-        <th><audio id="player" controls autoplay>
+        <th><audio style="width:240px;height:40px" id="player" controls autoplay>
             <source src="audio/noisy_0.wav" type="audio/wav">
         </audio></th>
-        <th><audio id="player" controls autoplay>
+        <th><audio style="width:240px;height:40px" id="player" controls autoplay>
             <source src="audio/noisy_0.wav" type="audio/wav">
         </audio></th>
-        <th><audio id="player" controls autoplay>
+        <th><audio style="width:240px;height:40px" id="player" controls autoplay>
             <source src="audio/noisy_0.wav" type="audio/wav">
         </audio></th>
-        <th><audio id="player" controls autoplay>
-            <source src="audio/noisy_0.wav" type="audio/wav">
+        <th><audio style="width:240px;height:40px" id="player" controls autoplay>
+            <source  src="audio/noisy_0.wav" type="audio/wav">
         </audio></th>
-        <th><audio id="player" controls autoplay>
+        <th><audio style="width:240px;height:40px" id="player" controls autoplay>
             <source src="audio/noisy_0.wav" type="audio/wav">
         </audio></th>
     </tr>
     <tr>
         <th>pDeepFilterNet2</th>
-        <th><audio id="player" controls autoplay>
+        <th><audio style="width:240px;height:40px" id="player" controls autoplay>
             <source src="audio/noisy_0.wav" type="audio/wav">
         </audio></th>
-        <th><audio id="player" controls autoplay>
+        <th><audio style="width:240px;height:40px" id="player" controls autoplay>
             <source src="audio/noisy_0.wav" type="audio/wav">
         </audio></th>
-        <th><audio id="player" controls autoplay>
+        <th><audio style="width:240px;height:40px" id="player" controls autoplay>
             <source src="audio/noisy_0.wav" type="audio/wav">
         </audio></th>
-        <th><audio id="player" controls autoplay>
-            <source src="audio/noisy_0.wav" type="audio/wav">
+        <th><audio style="width:240px;height:40px" id="player" controls autoplay>
+            <source  src="audio/noisy_0.wav" type="audio/wav">
         </audio></th>
-        <th><audio id="player" controls autoplay>
+        <th><audio style="width:240px;height:40px" id="player" controls autoplay>
             <source src="audio/noisy_0.wav" type="audio/wav">
         </audio></th>
     </tr>
@@ -274,73 +268,73 @@ overhead.
     </tr>
     <tr>
         <th>Clean</th>
-        <th><audio id="player" controls autoplay>
+        <th><audio style="width:240px;height:40px" id="player" controls autoplay>
             <source src="audio/noisy_0.wav" type="audio/wav">
         </audio></th>
-        <th><audio id="player" controls autoplay>
+        <th><audio style="width:240px;height:40px" id="player" controls autoplay>
             <source src="audio/noisy_0.wav" type="audio/wav">
         </audio></th>
-        <th><audio id="player" controls autoplay>
+        <th><audio style="width:240px;height:40px" id="player" controls autoplay>
             <source src="audio/noisy_0.wav" type="audio/wav">
         </audio></th>
-        <th><audio id="player" controls autoplay>
-            <source src="audio/noisy_0.wav" type="audio/wav">
+        <th><audio style="width:240px;height:40px" id="player" controls autoplay>
+            <source  src="audio/noisy_0.wav" type="audio/wav">
         </audio></th>
-        <th><audio id="player" controls autoplay>
+        <th><audio style="width:240px;height:40px" id="player" controls autoplay>
             <source src="audio/noisy_0.wav" type="audio/wav">
         </audio></th>
     </tr>
     <tr>
         <th>Noisy</th>
-        <th><audio id="player" controls autoplay>
+        <th><audio style="width:240px;height:40px" id="player" controls autoplay>
             <source src="audio/noisy_0.wav" type="audio/wav">
         </audio></th>
-        <th><audio id="player" controls autoplay>
+        <th><audio style="width:240px;height:40px" id="player" controls autoplay>
             <source src="audio/noisy_0.wav" type="audio/wav">
         </audio></th>
-        <th><audio id="player" controls autoplay>
+        <th><audio style="width:240px;height:40px" id="player" controls autoplay>
             <source src="audio/noisy_0.wav" type="audio/wav">
         </audio></th>
-        <th><audio id="player" controls autoplay>
-            <source src="audio/noisy_0.wav" type="audio/wav">
+        <th><audio style="width:240px;height:40px" id="player" controls autoplay>
+            <source  src="audio/noisy_0.wav" type="audio/wav">
         </audio></th>
-        <th><audio id="player" controls autoplay>
+        <th><audio style="width:240px;height:40px" id="player" controls autoplay>
             <source src="audio/noisy_0.wav" type="audio/wav">
         </audio></th>
     </tr>
     <tr>
         <th>DeepFilterNet2</th>
-        <th><audio id="player" controls autoplay>
+        <th><audio style="width:240px;height:40px" id="player" controls autoplay>
             <source src="audio/noisy_0.wav" type="audio/wav">
         </audio></th>
-        <th><audio id="player" controls autoplay>
+        <th><audio style="width:240px;height:40px" id="player" controls autoplay>
             <source src="audio/noisy_0.wav" type="audio/wav">
         </audio></th>
-        <th><audio id="player" controls autoplay>
+        <th><audio style="width:240px;height:40px" id="player" controls autoplay>
             <source src="audio/noisy_0.wav" type="audio/wav">
         </audio></th>
-        <th><audio id="player" controls autoplay>
-            <source src="audio/noisy_0.wav" type="audio/wav">
+        <th><audio style="width:240px;height:40px" id="player" controls autoplay>
+            <source  src="audio/noisy_0.wav" type="audio/wav">
         </audio></th>
-        <th><audio id="player" controls autoplay>
+        <th><audio style="width:240px;height:40px" id="player" controls autoplay>
             <source src="audio/noisy_0.wav" type="audio/wav">
         </audio></th>
     </tr>
     <tr>
         <th>pDeepFilterNet2</th>
-        <th><audio id="player" controls autoplay>
+        <th><audio style="width:240px;height:40px" id="player" controls autoplay>
             <source src="audio/noisy_0.wav" type="audio/wav">
         </audio></th>
-        <th><audio id="player" controls autoplay>
+        <th><audio style="width:240px;height:40px" id="player" controls autoplay>
             <source src="audio/noisy_0.wav" type="audio/wav">
         </audio></th>
-        <th><audio id="player" controls autoplay>
+        <th><audio style="width:240px;height:40px" id="player" controls autoplay>
             <source src="audio/noisy_0.wav" type="audio/wav">
         </audio></th>
-        <th><audio id="player" controls autoplay>
-            <source src="audio/noisy_0.wav" type="audio/wav">
+        <th><audio style="width:240px;height:40px" id="player" controls autoplay>
+            <source  src="audio/noisy_0.wav" type="audio/wav">
         </audio></th>
-        <th><audio id="player" controls autoplay>
+        <th><audio style="width:240px;height:40px" id="player" controls autoplay>
             <source src="audio/noisy_0.wav" type="audio/wav">
         </audio></th>
     </tr>
