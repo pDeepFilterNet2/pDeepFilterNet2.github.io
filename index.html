@@ -1,12 +1,15 @@
 <body>
+<title>
+    Audio Samples
+</title>
 <head>
     <link rel="stylesheet" href="style.css">
 </head>
 <center>
-    <h2>
+    <h1>
     A LIGHTWEIGHT DUAL-STAGE FRAMEWORK FOR PERSONALIZED SPEECH
     ENHANCEMENT BASED ON DEEPFILTERNET2
-    </h2>
+    </h1>
 
 <p><i>
     Thomas Serre*† , 
@@ -22,7 +25,7 @@
 </center>
 <br>
 
-<h3>Abstract</h3>
+<h2>Abstract</h2>
 <p align="justify"><i>
     Isolating the desired speaker’s voice amidst multiple
 speakers in a noisy acoustic context is a challenging task. Per-
@@ -46,9 +49,9 @@ overhead.
 </p></i>
 <hr>
 <hr>
-<h3>
+<h2>
     Samples
-</h3>
+</h2>
 <p align="justify">
     The samples bellow are extracted from a test set generated with VCTK corpus for the speech and DNS5 Challenge for the noise. 
     The typology of excerpt is the following: pn corresponds to target voice + noise, ps corresponds to target voice + interfereing voice 
@@ -56,36 +59,290 @@ overhead.
     to the Signal-to-Interference Ratio. 
 </p>
 <hr>
+<h3>Target voice + Interfering voice</h3>
 <table>
     <tr>
-        <th>Sample information</th>
-        <th>Clean</th>
-        <th>Noisy</th>
-        <th>DeepFilterNet2</th>
-        <th>pDeepFilterNet2</th>
+        <th><strong>Model</strong></th>
+        <th>Sample 1</th>
+        <th>Sample 2</th>
+        <th>Sample 3</th>
+        <th>Sample 4</th>
+        <th>Sample 5</th>
     </tr>
     <tr>
-        <th>
-            Type: ps
-            SIR: 
-            SNR:
-        </th>
-        <th><audio controls autoplay>
+        <th>SIR (dB)</th>
+        <th>-</th>
+        <th>-</th>
+        <th>-</th>
+        <th>-</th>
+        <th>-</th>
+    </tr>
+    <tr>
+        <th>Clean</th>
+        <th><audio id="player" controls autoplay>
             <source src="audio/noisy_0.wav" type="audio/wav">
-        </audio>
-        </th>
-        <th><audio controls autoplay>
+        </audio></th>
+        <th><audio id="player" controls autoplay>
             <source src="audio/noisy_0.wav" type="audio/wav">
-        </audio>
-        </th>
-        <th><audio controls autoplay>
+        </audio></th>
+        <th><audio id="player" controls autoplay>
             <source src="audio/noisy_0.wav" type="audio/wav">
-        </audio>
-        </th>
-        <th><audio controls autoplay>
+        </audio></th>
+        <th><audio id="player" controls autoplay>
             <source src="audio/noisy_0.wav" type="audio/wav">
-        </audio>
-        </th>
+        </audio></th>
+        <th><audio id="player" controls autoplay>
+            <source src="audio/noisy_0.wav" type="audio/wav">
+        </audio></th>
+    </tr>
+    <tr>
+        <th>Noisy</th>
+        <th><audio id="player" controls autoplay>
+            <source src="audio/noisy_0.wav" type="audio/wav">
+        </audio></th>
+        <th><audio id="player" controls autoplay>
+            <source src="audio/noisy_0.wav" type="audio/wav">
+        </audio></th>
+        <th><audio id="player" controls autoplay>
+            <source src="audio/noisy_0.wav" type="audio/wav">
+        </audio></th>
+        <th><audio id="player" controls autoplay>
+            <source src="audio/noisy_0.wav" type="audio/wav">
+        </audio></th>
+        <th><audio id="player" controls autoplay>
+            <source src="audio/noisy_0.wav" type="audio/wav">
+        </audio></th>
+    </tr>
+    <tr>
+        <th>DeepFilterNet2</th>
+        <th><audio id="player" controls autoplay>
+            <source src="audio/noisy_0.wav" type="audio/wav">
+        </audio></th>
+        <th><audio id="player" controls autoplay>
+            <source src="audio/noisy_0.wav" type="audio/wav">
+        </audio></th>
+        <th><audio id="player" controls autoplay>
+            <source src="audio/noisy_0.wav" type="audio/wav">
+        </audio></th>
+        <th><audio id="player" controls autoplay>
+            <source src="audio/noisy_0.wav" type="audio/wav">
+        </audio></th>
+        <th><audio id="player" controls autoplay>
+            <source src="audio/noisy_0.wav" type="audio/wav">
+        </audio></th>
+    </tr>
+    <tr>
+        <th>pDeepFilterNet2</th>
+        <th><audio id="player" controls autoplay>
+            <source src="audio/noisy_0.wav" type="audio/wav">
+        </audio></th>
+        <th><audio id="player" controls autoplay>
+            <source src="audio/noisy_0.wav" type="audio/wav">
+        </audio></th>
+        <th><audio id="player" controls autoplay>
+            <source src="audio/noisy_0.wav" type="audio/wav">
+        </audio></th>
+        <th><audio id="player" controls autoplay>
+            <source src="audio/noisy_0.wav" type="audio/wav">
+        </audio></th>
+        <th><audio id="player" controls autoplay>
+            <source src="audio/noisy_0.wav" type="audio/wav">
+        </audio></th>
+    </tr>
+</table>
+<hr>
+<h3>Target voice + Interfering voice + Noise</h3>
+<table>
+    <tr>
+        <th>Model</th>
+        <th>Sample 1</th>
+        <th>Sample 2</th>
+        <th>Sample 3</th>
+        <th>Sample 4</th>
+        <th>Sample 5</th>
+    </tr>
+    <tr>
+        <th>SIR (dB)</th>
+        <th>-</th>
+        <th>-</th>
+        <th>-</th>
+        <th>-</th>
+        <th>-</th>
+        <th>-</th>
+    </tr>
+    <tr>
+        <th>SNR (dB)</th>
+        <th>-</th>
+        <th>-</th>
+        <th>-</th>
+        <th>-</th>
+        <th>-</th>
+        <th>-</th>
+    </tr>
+    <tr>
+        <th>Clean</th>
+        <th><audio id="player" controls autoplay>
+            <source src="audio/noisy_0.wav" type="audio/wav">
+        </audio></th>
+        <th><audio id="player" controls autoplay>
+            <source src="audio/noisy_0.wav" type="audio/wav">
+        </audio></th>
+        <th><audio id="player" controls autoplay>
+            <source src="audio/noisy_0.wav" type="audio/wav">
+        </audio></th>
+        <th><audio id="player" controls autoplay>
+            <source src="audio/noisy_0.wav" type="audio/wav">
+        </audio></th>
+        <th><audio id="player" controls autoplay>
+            <source src="audio/noisy_0.wav" type="audio/wav">
+        </audio></th>
+    </tr>
+    <tr>
+        <th>Noisy</th>
+        <th><audio id="player" controls autoplay>
+            <source src="audio/noisy_0.wav" type="audio/wav">
+        </audio></th>
+        <th><audio id="player" controls autoplay>
+            <source src="audio/noisy_0.wav" type="audio/wav">
+        </audio></th>
+        <th><audio id="player" controls autoplay>
+            <source src="audio/noisy_0.wav" type="audio/wav">
+        </audio></th>
+        <th><audio id="player" controls autoplay>
+            <source src="audio/noisy_0.wav" type="audio/wav">
+        </audio></th>
+        <th><audio id="player" controls autoplay>
+            <source src="audio/noisy_0.wav" type="audio/wav">
+        </audio></th>
+    </tr>
+    <tr>
+        <th>DeepFilterNet2</th>
+        <th><audio id="player" controls autoplay>
+            <source src="audio/noisy_0.wav" type="audio/wav">
+        </audio></th>
+        <th><audio id="player" controls autoplay>
+            <source src="audio/noisy_0.wav" type="audio/wav">
+        </audio></th>
+        <th><audio id="player" controls autoplay>
+            <source src="audio/noisy_0.wav" type="audio/wav">
+        </audio></th>
+        <th><audio id="player" controls autoplay>
+            <source src="audio/noisy_0.wav" type="audio/wav">
+        </audio></th>
+        <th><audio id="player" controls autoplay>
+            <source src="audio/noisy_0.wav" type="audio/wav">
+        </audio></th>
+    </tr>
+    <tr>
+        <th>pDeepFilterNet2</th>
+        <th><audio id="player" controls autoplay>
+            <source src="audio/noisy_0.wav" type="audio/wav">
+        </audio></th>
+        <th><audio id="player" controls autoplay>
+            <source src="audio/noisy_0.wav" type="audio/wav">
+        </audio></th>
+        <th><audio id="player" controls autoplay>
+            <source src="audio/noisy_0.wav" type="audio/wav">
+        </audio></th>
+        <th><audio id="player" controls autoplay>
+            <source src="audio/noisy_0.wav" type="audio/wav">
+        </audio></th>
+        <th><audio id="player" controls autoplay>
+            <source src="audio/noisy_0.wav" type="audio/wav">
+        </audio></th>
+    </tr>
+</table>
+
+<hr>
+<h3>Target voice + Noise</h3>
+<table>
+    <tr>
+        <th><strong>Model</strong></th>
+        <th>Sample 1</th>
+        <th>Sample 2</th>
+        <th>Sample 3</th>
+        <th>Sample 4</th>
+        <th>Sample 5</th>
+    </tr>
+    <tr>
+        <th>SNR (dB)</th>
+        <th>-</th>
+        <th>-</th>
+        <th>-</th>
+        <th>-</th>
+        <th>-</th>
+    </tr>
+    <tr>
+        <th>Clean</th>
+        <th><audio id="player" controls autoplay>
+            <source src="audio/noisy_0.wav" type="audio/wav">
+        </audio></th>
+        <th><audio id="player" controls autoplay>
+            <source src="audio/noisy_0.wav" type="audio/wav">
+        </audio></th>
+        <th><audio id="player" controls autoplay>
+            <source src="audio/noisy_0.wav" type="audio/wav">
+        </audio></th>
+        <th><audio id="player" controls autoplay>
+            <source src="audio/noisy_0.wav" type="audio/wav">
+        </audio></th>
+        <th><audio id="player" controls autoplay>
+            <source src="audio/noisy_0.wav" type="audio/wav">
+        </audio></th>
+    </tr>
+    <tr>
+        <th>Noisy</th>
+        <th><audio id="player" controls autoplay>
+            <source src="audio/noisy_0.wav" type="audio/wav">
+        </audio></th>
+        <th><audio id="player" controls autoplay>
+            <source src="audio/noisy_0.wav" type="audio/wav">
+        </audio></th>
+        <th><audio id="player" controls autoplay>
+            <source src="audio/noisy_0.wav" type="audio/wav">
+        </audio></th>
+        <th><audio id="player" controls autoplay>
+            <source src="audio/noisy_0.wav" type="audio/wav">
+        </audio></th>
+        <th><audio id="player" controls autoplay>
+            <source src="audio/noisy_0.wav" type="audio/wav">
+        </audio></th>
+    </tr>
+    <tr>
+        <th>DeepFilterNet2</th>
+        <th><audio id="player" controls autoplay>
+            <source src="audio/noisy_0.wav" type="audio/wav">
+        </audio></th>
+        <th><audio id="player" controls autoplay>
+            <source src="audio/noisy_0.wav" type="audio/wav">
+        </audio></th>
+        <th><audio id="player" controls autoplay>
+            <source src="audio/noisy_0.wav" type="audio/wav">
+        </audio></th>
+        <th><audio id="player" controls autoplay>
+            <source src="audio/noisy_0.wav" type="audio/wav">
+        </audio></th>
+        <th><audio id="player" controls autoplay>
+            <source src="audio/noisy_0.wav" type="audio/wav">
+        </audio></th>
+    </tr>
+    <tr>
+        <th>pDeepFilterNet2</th>
+        <th><audio id="player" controls autoplay>
+            <source src="audio/noisy_0.wav" type="audio/wav">
+        </audio></th>
+        <th><audio id="player" controls autoplay>
+            <source src="audio/noisy_0.wav" type="audio/wav">
+        </audio></th>
+        <th><audio id="player" controls autoplay>
+            <source src="audio/noisy_0.wav" type="audio/wav">
+        </audio></th>
+        <th><audio id="player" controls autoplay>
+            <source src="audio/noisy_0.wav" type="audio/wav">
+        </audio></th>
+        <th><audio id="player" controls autoplay>
+            <source src="audio/noisy_0.wav" type="audio/wav">
+        </audio></th>
     </tr>
 </table>
 </body>

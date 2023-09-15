@@ -11,8 +11,17 @@ body {
   }
 
 table, tr, td, th{
-    padding: 10px;
+    padding: 2px;
     margin: auto;
     border: none;
     }
-  
+
+/* table, tr, td, th{
+  padding: 2px;
+  margin: auto;
+  border: none;
+  } */
+
+/* #player {
+  width: 100%;
+  } */
