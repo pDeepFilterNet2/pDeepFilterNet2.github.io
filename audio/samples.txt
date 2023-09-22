@@ -1,9 +1,9 @@
 type, fn, sample
 pn, primary_noisy_target_p232_rir0_H1y0j2_pdPM_snr22_tl-30_fileid_2135, 1
-pn, primary_noisy_target_p256_rir0_ydcbl5FeuBM_snr0_tl-23_fileid_325, 2
-pn,primary_noisy_target_p276_rir0_Djp17Fo97kw_snr3_tl-34_fileid_470, 3
-pn, primary_noisy_target_p287_rir0_door_Freesound_validated_191819_1_snr6_tl-34_fileid_2532, 4
-pn, primary_noisy_target_p306_rir0_UtR3Wm6KFTI_snr7_tl-21_fileid_1087, 5
+pn, primary_noisy_target_p256_rir0_ydcbl5FeuBM_snr0_tl-23_fileid_325, 5
+pn,primary_noisy_target_p276_rir0_Djp17Fo97kw_snr3_tl-34_fileid_470, 4
+pn, primary_noisy_target_p287_rir0_door_Freesound_validated_191819_1_snr6_tl-34_fileid_2532, 3
+pn, primary_noisy_target_p306_rir0_UtR3Wm6KFTI_snr7_tl-21_fileid_1087, 2
 ps, ps_noisy_target_p249_rir0__interf_p292_sir-1_tl-18_fileid_990, 1
 ps, ps_noisy_target_p255_rir0__interf_p308_sir12_tl-30_fileid_1035, 2
 ps, ps_noisy_target_p255_rir0__interf_p374_sir6_tl-27_fileid_1038, 3
