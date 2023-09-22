@@ -16,6 +16,17 @@ table, tr, td, th{
     border: none;
     }
 
+.header {
+  background-color: #024267;
+
+}
+
+.audio-player {
+  width:240px;
+  height:40px;
+}
+
+
 /* table, tr, td, th{
   padding: 2px;
   margin: auto;
