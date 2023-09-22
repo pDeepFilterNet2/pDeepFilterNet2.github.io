@@ -51,19 +51,21 @@ overhead.
 <p align="justify">
     The samples below are extracted from a test set generated with VCTK 
     corpus for the speech and DNS5 Challenge for the noise. 
-    The typology of excerpt is the following: pn corresponds to 
-    target voice + noise, ps corresponds to target voice + interfering voice 
-    and psn corresponds to target voice + interfering voice + noise. 
-    The SNR corresponds to the Signal-to-Noise ratio, and the SIR 
-    to the Signal-to-Interference Ratio. 
-</p>
+    The are three typologies of excerpts: target voice + interfering voice, 
+    target voice + interfering voice + noise and target voice + noise.
+    The SNR corresponds to the Signal-to-Noise Ratio and the SIR corresponds
+    to the Signal-to-Interference Ratio. In each table we have the clean excerpt,
+    the noisy excerpt, the output of DeepFilterNet2 (<b>without</b> personalization)
+    and the output of pDeepFilterNet2 (<b>with</b> personalization). The latter is 
+    the model that we propose, which achieve personalization without 
+    increasing the computational complexity of the original model. 
 <hr>
 <h3>Target voice + Interfering voice</h3>
 <br>
 <br>
 <table>
     <tr>
-        <th>Model</th>
+        <th></th>
         <th>Sample 1</th>
         <th>Sample 2</th>
         <th>Sample 3</th>
@@ -72,11 +74,11 @@ overhead.
     </tr>
     <tr>
         <th>SIR</th>
-        <th>-1dB</th>
         <th>12dB</th>
         <th>6dB</th>
-        <th>1dB</th>
         <th>5dB</th>
+        <th>1dB</th>
+        <th>-1dB</th>
     </tr>
     <tr>
         <th>Clean</th>
@@ -161,7 +163,7 @@ overhead.
 <br>
 <table>
     <tr>
-        <th>Model</th>
+        <th></th>
         <th>Sample 1</th>
         <th>Sample 2</th>
         <th>Sample 3</th>
@@ -170,19 +172,19 @@ overhead.
     </tr>
     <tr>
         <th>SIR (dB)</th>
-        <th>17dB</th>
-        <th>1dB</th>
-        <th>18dB</th>
-        <th>4dB</th>
+        <th>9dB</th>
+        <th>6dB</th>
+        <th>3dB</th>
         <th>0dB</th>
+        <th>-1dB</th>
     </tr>
     <tr>
         <th>SNR (dB)</th>
-        <th>10dB</th>
-        <th>15dB</th>
-        <th>-2dB</th>
-        <th>7dB</th>
+        <th>5dB</th>
+        <th>6dB</th>
+        <th>11dB</th>
         <th>29dB</th>
+        <th>12dB</th>
     </tr>
     <tr>
         <th>Clean</th>
@@ -267,7 +269,7 @@ overhead.
 <br>
 <table>
     <tr>
-        <th><strong>Model</strong></th>
+        <th></th>
         <th>Sample 1</th>
         <th>Sample 2</th>
         <th>Sample 3</th>
@@ -277,10 +279,10 @@ overhead.
     <tr>
         <th>SNR (dB)</th>
         <th>22dB</th>
-        <th>0dB</th>
-        <th>3dB</th>
-        <th>6dB</th>
         <th>7dB</th>
+        <th>6dB</th>
+        <th>3dB</th>
+        <th>0dB</th>
     </tr>
     <tr>
         <th>Clean</th>
