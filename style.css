@@ -16,6 +16,17 @@ table, tr, td, th{
     border: none;
     }
 
+table tr th:first-child{
+  text-align: right;
+  padding-right: 5px;
+}
+
+h1{
+  margin-top: 2em;
+  font-size: 30px;
+  font-style: italic;
+}
+
 .header {
   background-color: #024267;
 
@@ -27,12 +38,16 @@ table, tr, td, th{
 }
 
 .main {
-  margin: 0 225px;
+  margin: 0 17vw;
 }
 
 
 .warning {
   color: rgb(255, 0, 0);
+  max-width: 400px;
+  padding: 20px;
+  border: 1px solid red;
+  border-radius: 20px;
 }
 
 
