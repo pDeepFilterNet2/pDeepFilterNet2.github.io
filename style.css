@@ -22,8 +22,17 @@ table, tr, td, th{
 }
 
 .audio-player {
-  width:240px;
+  width:150px;
   height:40px;
+}
+
+.main {
+  margin: 0 225px;
+}
+
+
+.warning {
+  color: rgb(255, 0, 0);
 }
 
 

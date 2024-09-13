@@ -1,4 +1,8 @@
 <body>
+
+<center>
+<section class="main">
+
 <title>
     Audio Samples
 </title>
@@ -7,10 +11,278 @@
 </head>
 <center>
     <h1>
-    A LIGHTWEIGHT DUAL-STAGE FRAMEWORK FOR PERSONALIZED SPEECH
-    ENHANCEMENT BASED ON DEEPFILTERNET2
+    Audio excerpts of personalized speech enhancement systems
     </h1>
+</center>
+<br>
 
+<h2>
+    Introduction
+</h2>
+
+<p align="justify">
+    This page gathers audio examples of personalized speech enhancement. Precisily, it is the combination of two works separated into two parts, as follows:
+    <ul>
+        Part I. <i>A lightweight dual-stage Framework for Personalized Speech Enhancement Based on DeepFilterNet2</i> <br>
+        <b>Part II. <i>Contrastive Knowledge Distillation for Embedding Refinement in Personalized Speech Enhancement</i></b>
+    </ul>
+     <br>
+
+     <span class="warning"> The order is temporaly exchanged for ICASSP25 reviews: part II is on top followed by part I. 
+        For ICASSP25 reviewers, the exerpts are provided in <b>part II</b>. </span>
+</p>
+<br>
+
+<hr>
+<hr>
+
+
+<h2><center>Part II. Contrastive Knowledge Distillation for Embedding Refinement in Personalized Speech Enhancement </h2>
+
+    <center>
+    <p><i>
+        Thomas Serre*† , 
+        Mathieu Fontaine* , 
+        Éric Benhaim† , 
+        Slim Essid*
+    </i> </p>
+        
+    <p>
+    †Orosound, Signal Processing Lab &emsp; *LTCI, Télécom Paris, Institut Polytechnique de Paris </tab>
+    </p>
+    </center>
+    <br>
+
+    <h3> Abstract</h3>
+    <p align="justify"><i>
+    
+        Personalized speech enhancement (PSE) has shown
+convincing results when it comes to extracting a known target
+voice among interfering ones. The corresponding systems usually
+incorporate a representation of the target voice within the
+enhancement system, which is extracted from an enrollment
+clip of the target voice with upstream models. Those models
+are generally heavy as the speaker embedding’s quality directly
+affects PSE performances. Yet, embeddings generated beforehand
+cannot account for the variations of the target voice during
+inference time. In this paper, we propose to perform on-the-fly refinement of the speaker embedding using a tiny speaker
+encoder. We first introduce a novel contrastive knowledge distillation methodology in order to train a 150k-parameter encoder
+from complex embeddings. We then use this encoder within the
+enhancement system during inference and show that the proposed
+method greatly improves PSE performances while maintaining a
+low computational load.
+    </p></i>
+    <hr>
+    <h3>
+        Samples
+    </h3>
+    <p align="justify">
+        In this work, we evaluated our system and the baselines on DNS5 Blind test set which constists of real data recordings.
+        It is separated into ”Headset” and ”Speakerphone” tracks. The latter is harder as the target voice 
+        is further from the microphone than with Headset samples.
+        We propose samples from pDeepFilterNet2 (pDFNet2), pDeepFilterNet2 + similarity (pDFNet2+) which corresponds to the <i>light</i> similarity, and our trained implementations of pDCCRN and E3Net.
+        No clean reference is available for this test set so only the unprocessed sample can be played in addition to processed samples. 
+    <hr>
+
+    <h3>Heaset Track</h3>
+    <table>
+        <tr>
+            <th></th>
+            <th class="header">Sample 1</th>
+            <th class="header">Sample 2</th>
+            <th class="header">Sample 3</th>
+            <th class="header">Sample 4</th>
+        </tr>
+        <tr>
+            <th>Noisy</th>
+            <th><audio class="audio-player" controls>
+                <source src="audio_partII/speakerphone/sample1/noisy.wav" type="audio/wav">
+            </audio></th>
+            <th><audio class="audio-player"  controls>
+                <source src="audio_partII/speakerphone/sample2/noisy.wav" type="audio/wav">
+            </audio></th>
+            <th><audio class="audio-player"  controls>
+                <source src="audio_partII/speakerphone/sample3/noisy.wav" type="audio/wav">
+            </audio></th>
+            <th><audio class="audio-player"  controls>
+                <source  src="audio_partII/speakerphone/sample4/noisy.wav" type="audio/wav">
+            </audio></th>
+        </tr>
+        <tr>
+            <th>pDNFNet2</th>
+            <th><audio class="audio-player"  controls>
+                <source src="audio_partII/speakerphone/sample1/pDFNet.wav" type="audio/wav">
+            </audio></th>
+            <th><audio class="audio-player"  controls>
+                <source src="audio_partII/speakerphone/sample2/pDFNet.wav" type="audio/wav">
+            </audio></th>
+            <th><audio class="audio-player"  controls>
+                <source src="audio_partII/speakerphone/sample3/pDFNet.wav" type="audio/wav">
+            </audio></th>
+            <th><audio class="audio-player"  controls>
+                <source  src="audio_partII/speakerphone/sample4/pDFNet.wav" type="audio/wav">
+            </audio></th>
+        </tr>
+        <tr>
+            <th>
+                pDFNet2+ <i>(proposed)</i>
+            </th>
+            <th><audio class="audio-player"  controls>
+                <source src="audio_partII/speakerphone/sample1/pDFNet+.wav" type="audio/wav">
+            </audio></th>
+            <th><audio class="audio-player"  controls>
+                <source src="audio_partII/speakerphone/sample2/pDFNet+.wav" type="audio/wav">
+            </audio></th>
+            <th><audio class="audio-player"  controls>
+                <source src="audio_partII/speakerphone/sample3/pDFNet+.wav" type="audio/wav">
+            </audio></th>
+            <th><audio class="audio-player"  controls>
+                <source  src="audio_partII/speakerphone/sample4/pDFNet+.wav" type="audio/wav">
+            </audio></th>
+        </tr>
+        <tr>
+            <th>
+                pDCCRN
+            </th>
+            <th><audio class="audio-player"  controls>
+                <source src="audio_partII/speakerphone/sample1/pDCCRN.wav" type="audio/wav">
+            </audio></th>
+            <th><audio class="audio-player"  controls>
+                <source src="audio_partII/speakerphone/sample2/pDCCRN.wav" type="audio/wav">
+            </audio></th>
+            <th><audio class="audio-player"  controls>
+                <source src="audio_partII/speakerphone/sample3/pDCCRN.wav" type="audio/wav">
+            </audio></th>
+            <th><audio class="audio-player"  controls>
+                <source  src="audio_partII/speakerphone/sample4/pDCCRN.wav" type="audio/wav">
+            </audio></th>
+        </tr>
+
+        <tr>
+            <th>
+                E3Net
+            </th>
+            <th><audio class="audio-player"  controls>
+                <source src="audio_partII/speakerphone/sample1/E3Net.wav" type="audio/wav">
+            </audio></th>
+            <th><audio class="audio-player"  controls>
+                <source src="audio_partII/speakerphone/sample2/E3Net.wav" type="audio/wav">
+            </audio></th>
+            <th><audio class="audio-player"  controls>
+                <source src="audio_partII/speakerphone/sample3/E3Net.wav" type="audio/wav">
+            </audio></th>
+            <th><audio class="audio-player"  controls>
+                <source  src="audio_partII/speakerphone/sample4/E3Net.wav" type="audio/wav">
+            </audio></th>
+        </tr>
+    </table>
+    </table>
+    <br>
+    
+    <hr>
+    <h3>SpeakerPhone Track</h3>
+    <table>
+        <tr>
+            <th></th>
+            <th class="header">Sample 1</th>
+            <th class="header">Sample 2</th>
+            <th class="header">Sample 3</th>
+            <th class="header">Sample 4</th>
+        </tr>
+        <tr>
+            <th>Noisy</th>
+            <th><audio class="audio-player" controls>
+                <source src="audio_partII/speakerphone/sample1/noisy.wav" type="audio/wav">
+            </audio></th>
+            <th><audio class="audio-player"  controls>
+                <source src="audio_partII/speakerphone/sample2/noisy.wav" type="audio/wav">
+            </audio></th>
+            <th><audio class="audio-player"  controls>
+                <source src="audio_partII/speakerphone/sample3/noisy.wav" type="audio/wav">
+            </audio></th>
+            <th><audio class="audio-player"  controls>
+                <source  src="audio_partII/speakerphone/sample4/noisy.wav" type="audio/wav">
+            </audio></th>
+        </tr>
+        <tr>
+            <th>pDNFNet2</th>
+            <th><audio class="audio-player"  controls>
+                <source src="audio_partII/speakerphone/sample1/pDFNet.wav" type="audio/wav">
+            </audio></th>
+            <th><audio class="audio-player"  controls>
+                <source src="audio_partII/speakerphone/sample2/pDFNet.wav" type="audio/wav">
+            </audio></th>
+            <th><audio class="audio-player"  controls>
+                <source src="audio_partII/speakerphone/sample3/pDFNet.wav" type="audio/wav">
+            </audio></th>
+            <th><audio class="audio-player"  controls>
+                <source  src="audio_partII/speakerphone/sample4/pDFNet.wav" type="audio/wav">
+            </audio></th>
+        </tr>
+        <tr>
+            <th>
+                pDFNet2+ <i>(proposed)</i>
+            </th>
+            <th><audio class="audio-player"  controls>
+                <source src="audio_partII/speakerphone/sample1/pDFNet+.wav" type="audio/wav">
+            </audio></th>
+            <th><audio class="audio-player"  controls>
+                <source src="audio_partII/speakerphone/sample2/pDFNet+.wav" type="audio/wav">
+            </audio></th>
+            <th><audio class="audio-player"  controls>
+                <source src="audio_partII/speakerphone/sample3/pDFNet+.wav" type="audio/wav">
+            </audio></th>
+            <th><audio class="audio-player"  controls>
+                <source  src="audio_partII/speakerphone/sample4/pDFNet+.wav" type="audio/wav">
+            </audio></th>
+        </tr>
+        <tr>
+            <th>
+                pDCCRN
+            </th>
+            <th><audio class="audio-player"  controls>
+                <source src="audio_partII/speakerphone/sample1/pDCCRN.wav" type="audio/wav">
+            </audio></th>
+            <th><audio class="audio-player"  controls>
+                <source src="audio_partII/speakerphone/sample2/pDCCRN.wav" type="audio/wav">
+            </audio></th>
+            <th><audio class="audio-player"  controls>
+                <source src="audio_partII/speakerphone/sample3/pDCCRN.wav" type="audio/wav">
+            </audio></th>
+            <th><audio class="audio-player"  controls>
+                <source  src="audio_partII/speakerphone/sample4/pDCCRN.wav" type="audio/wav">
+            </audio></th>
+        </tr>
+
+        <tr>
+            <th>
+                E3Net
+            </th>
+            <th><audio class="audio-player"  controls>
+                <source src="audio_partII/speakerphone/sample1/E3Net.wav" type="audio/wav">
+            </audio></th>
+            <th><audio class="audio-player"  controls>
+                <source src="audio_partII/speakerphone/sample2/E3Net.wav" type="audio/wav">
+            </audio></th>
+            <th><audio class="audio-player"  controls>
+                <source src="audio_partII/speakerphone/sample3/E3Net.wav" type="audio/wav">
+            </audio></th>
+            <th><audio class="audio-player"  controls>
+                <source  src="audio_partII/speakerphone/sample4/E3Net.wav" type="audio/wav">
+            </audio></th>
+        </tr>
+    </table>
+    </table>
+    <br>
+
+<hr>
+<hr>
+
+
+<br>
+<h2><center>Part I. A LIGHTWEIGHT DUAL-STAGE FRAMEWORK FOR PERSONALIZED SPEECH ENHANCEMENT BASED ON DEEPFILTERNET2 </h2>
+
+<center>
 <p><i>
     Thomas Serre*† , 
     Mathieu Fontaine* , 
@@ -25,8 +297,9 @@
 </center>
 <br>
 
-<h2>Abstract</h2>
+<h3> Abstract</h3>
 <p align="justify"><i>
+
     Isolating the desired speaker’s voice amidst multiple
 speakers in a noisy acoustic context is a challenging task. Personalized speech enhancement (PSE) endeavors to achieve
 this by leveraging prior knowledge of the speaker’s voice.
@@ -44,9 +317,9 @@ of DeepFilterNet2 while preserving minimal computational
 overhead.
 </p></i>
 <hr>
-<h2>
+<h3>
     Samples
-</h2>
+</h3>
 <p align="justify">
     The samples below are extracted from a test set generated with VCTK 
     corpus for the speech and DNS5 Challenge for the noise. 
@@ -359,6 +632,14 @@ overhead.
     </tr>
 </table>
 <hr>
+<hr>
+
 <br>
 <br>
+
+
+</section>
+</center>
+
+
 </body>
